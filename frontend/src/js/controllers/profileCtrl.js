@@ -272,7 +272,6 @@
                                 } else {
                                     $rootScope.notify("error", "Please provide a valid URL!");
                                 }
-                                $rootScope.notify("error", vm.FormError);
 
                             } catch (error) {
                                 $rootScope.notify("error", error);
