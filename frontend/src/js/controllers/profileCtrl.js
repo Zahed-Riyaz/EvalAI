@@ -226,7 +226,6 @@
                 vm.user.github_url = vm.user.github_url === null ? "" : vm.user.github_url;
                 vm.user.google_scholar_url = vm.user.google_scholar_url === null ? "" : vm.user.google_scholar_url;
                 vm.user.linkedin_url = vm.user.linkedin_url === null ? "" : vm.user.linkedin_url;
-
                 if (!vm.isURLValid(vm.user[editid])) {
                     vm.isFormError = true;
                     $rootScope.notify("error", "URL length should not be greater than 200 or is in invalid format!");
@@ -271,7 +270,7 @@
                                 } else if (isAffiliation_valid) {
                                     vm.FormError = response.data.affiliation[0]; 
                                 } else {
-                                    $rootScope.notify("error", "Some error have occured . Please try again !");
+                                    $rootScope.notify("error", "Please provide a valid URL!");
                                 }
                                 $rootScope.notify("error", vm.FormError);
 
